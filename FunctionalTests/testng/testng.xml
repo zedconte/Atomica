@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Industrika Test Suite" thread-count="4" parallel="tests" verbose="1">
+ 
+<suite-files>
+    <suite-file path="./testng/main/main.xml" />
+   <suite-file path="./testng/maintenance.xml" />
+   <suite-file path="./testng/sales.xml" />
+  </suite-files>
+
+ 
+</suite>

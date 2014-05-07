@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Maintenance Test Suite" thread-count="4" parallel="classes" verbose="1">
+ 
+<test name="Maintenance - Firefox">
+<parameter name="browser_type" value="firefox"/>
+<packages>
+<package name="com.industrika.functionaltests.maintenance"/>
+</packages>
+</test>
+ 
+<test name="Maintenance - Chrome">
+<parameter name="browser_type" value="chrome"/>
+<packages>
+<package name="com.industrika.functionaltests.maintenance"/>
+</packages>
+</test>
+
+<test name="Maintenance - IE">
+<parameter name="browser_type" value="ie"/>
+<packages>
+<package name="com.industrika.functionaltests.maintenance"/>
+</packages>
+</test>
+
+<test name="Maintenance - Opera">
+<parameter name="browser_type" value="opera"/>
+<packages>
+<package name="com.industrika.functionaltests.maintenance"/>
+</packages>
+</test>
+ 
+</suite>

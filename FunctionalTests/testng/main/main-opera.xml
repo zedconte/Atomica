@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main-Opera Test Suite" thread-count="1" parallel="false" verbose="1">
+	<parameter name="browser_timeout" value="15"/>
+	<parameter name="browser_type" value="opera"/>
+ 
+	<test name="Main - Opera">
+		<packages>
+			<package name="com.industrika.functionaltests.main"/>
+		</packages>
+	</test>
+ 
+</suite>

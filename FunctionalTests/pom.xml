@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.industrika</groupId>
+  <artifactId>FunctionalTests</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+<plugins>
+<plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-compiler-plugin</artifactId>
+   <version>3.1</version>
+   <configuration>
+      <source>1.7</source>
+      <target>1.7</target>
+   </configuration>
+</plugin>
+<plugin>
+
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>2.14</version>
+<configuration>
+<suiteXmlFiles>
+<suiteXmlFile>src/test/resources/testng/testng.xml</suiteXmlFile>
+</suiteXmlFiles>
+<properties>
+                    <property>
+                        <name>usedefaultlisteners</name>
+                        <value>false</value>
+                    </property>
+                    <property>
+                        <name>listener</name>
+                        <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+                    </property>
+                </properties>
+                
+
+</configuration>
+</plugin>
+</plugins>
+</build>
+<dependencies>
+<dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.3.1</version>
+      <scope>test</scope>
+    </dependency>
+<dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-java</artifactId>
+  <version>2.40.0</version>
+</dependency>
+<dependency>
+	<groupId>org.seleniumhq.selenium</groupId>
+	<artifactId>selenium-remote-driver</artifactId>
+	<version>2.37.1</version>
+</dependency>
+<dependency>
+	<groupId>com.opera</groupId>
+	<artifactId>operadriver</artifactId>
+	<version>1.5</version>
+</dependency>
+<dependency>
+	<groupId>org.seleniumhq.selenium</groupId>
+	<artifactId>selenium-firefox-driver</artifactId>
+	<version>2.37.1</version>
+</dependency>
+<dependency>
+          <groupId>com.google.inject</groupId>
+          <artifactId>guice</artifactId>
+          <version>3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.4</version>
+            <scope>test</scope>
+        </dependency>
+<dependency>
+	<groupId>org.uncommons</groupId>
+	<artifactId>reportng</artifactId>
+	<version>1.1.4</version>
+	<scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+            </exclusion>
+        </exclusions>
+</dependency>
+<dependency>
+	<groupId>org.hamcrest</groupId>
+	<artifactId>hamcrest-all</artifactId>
+	<version>1.3</version>
+</dependency>
+<dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.1.5</version>
+            <scope>test</scope>
+        </dependency>
+<dependency>
+	<groupId>info.cukes</groupId>
+	<artifactId>cucumber-testng</artifactId>
+	<version>1.1.5</version>
+</dependency>
+       
+</dependencies>
+
+</project>

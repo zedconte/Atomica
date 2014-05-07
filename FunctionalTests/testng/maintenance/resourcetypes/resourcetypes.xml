@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ResourceTypes Test Suite" thread-count="1" parallel="false" verbose="1">
+<parameter name="browser_timeout" value="10"/>
+ <suite-files>
+   <suite-file path="./testng/maintenance/resourcetypes/resourcetypes-firefox.xml" />
+   <suite-file path="./testng/maintenance/resourcetypes/resourcetypes-ie.xml" />
+   <suite-file path="./testng/maintenance/resourcetypes/resourcetypes-chrome.xml" />
+   <suite-file path="./testng/maintenance/resourcetypes/resourcetypes-opera.xml" />
+  </suite-files>
+ 
+</suite>
